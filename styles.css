@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Edu+TAS+Beginner:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&family=The+Nautigal:wght@700&display=swap');
+
+body {
+    background-image: url('https://mindmatters.ai/wp-content/uploads/sites/2/2021/03/mathematical-formulas-scaled.jpg');
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    margin: 0px;
+    border: solid double white 10px;
+}
+h1 {
+    font-family: 'Dancing Script', cursive, bolt;
+    max-width: 100%;
+    font-size: 70px;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+}
+h2{
+    font-family: 'Dancing Script', cursive, bolt;
+    max-width: 100%;
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 4px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 420px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 70vh;
+}
+
+.item {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+.item:hover {
+    background-color: #00bfff;
+}
+
+.item:active {
+    background-color: #0aace2;
+}
+input {
+    width: 710px;
+    height: 60px;
+    border: solid;
+    border-color: black;
+    outline: none;
+    text-align: right;
+    border-width: 2px;
+    margin-right: 2px;
+    color: white;
+    font-size: 25px;
+    background-color: blue;
+}
+.input {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 5;
+    margin: 0;
+}
+#equal {
+    background-color: red;
+}
+#clr {
+    background-color:rgb(218, 100, 57);
+}
+#equal:hover {
+    background-color:red;
+}
+
+#equal:active {
+    background-color: rgb(176, 5, 5);
+}
+#clr:hover {
+    background-color:rgb(218, 100, 57);
+}
+
+#clr:active {
+    background-color: rgb(154, 68, 37);
+}
