@@ -11,6 +11,6 @@ Creating a Calculator with Javascript without eval() and stringMath() functions
 
 
 ## Demo
-See the [demo link](https://calculator2-a3d17.firebaseapp.com/) on Firebase. 
+See the [demo link](https://natalia-pogosova-calcula-deed3.web.app/) on Firebase. 
 
-![Demo screen shot](https://github.com/NatalliaPahosava/calculator2/blob/main/img/--demo-img.png)
+![Demo screen shot](https://github.com/NatalliaPahosava/calculator-with-parseFloat/blob/main/img/--demo-img.png)
