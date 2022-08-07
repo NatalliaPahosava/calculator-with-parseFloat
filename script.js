@@ -1,9 +1,9 @@
 let Fcalc = document.querySelector('#input')
 let Currents = 0 //// numbers
 let newNumber = false //if no numbers-false, if we have numbers - true
-let stringOfNumbers = '' ///starts with empty string without numbers
+let stringOfNumbers = '' ///starts with empty string without letters('2')
 
-//insert numbers
+//Insert numbers
 const insert = (num) => {
   if (newNumber) {
     Fcalc.value = num
@@ -19,17 +19,40 @@ const insert = (num) => {
 ///
 const Operation = (operation) => {
   let display = Fcalc.value
+
   if (newNumber && stringOfNumbers != '=') {
     Fcalc.value = Currents
   } else {
     newNumber = true
-    if ('+' == stringOfNumbers) Currents += parseFloat(display)
-    else if ('-' == stringOfNumbers) Currents -= parseFloat(display)
-    else if ('/' == stringOfNumbers) Currents /= parseFloat(display)
-    else if ('*' == stringOfNumbers) Currents *= parseFloat(display)
-    else Currents = parseFloat(display)
+    switch (stringOfNumbers) {
+      case '+':
+        Currents += parseFloat(display)
+        break
+      case '-':
+        Currents -= parseFloat(display)
+        break
+      case '/':
+        Currents /= parseFloat(display)
+        break
+      case '*':
+        Currents *= parseFloat(display)
+        break
+      default:
+        Currents = parseFloat(display)
+    }
     Fcalc.value = Currents
     stringOfNumbers = operation
+
+    // Second version with if statement
+
+    //   if ('+' == stringOfNumbers) Currents += parseFloat(display)
+    //   else if ('-' == stringOfNumbers) Currents -= parseFloat(display)
+    //   else if ('/' == stringOfNumbers) Currents /= parseFloat(display)
+    //   else if ('*' == stringOfNumbers) Currents *= parseFloat(display)
+    //   else Currents = parseFloat(display)
+    //   Fcalc.value = Currents
+    //   stringOfNumbers = operation
+    // }
   }
 }
 
@@ -47,11 +70,11 @@ const decimal = () => {
   }
 }
 
-//clean result or screen
+//Clean result or screen
 const clean = () => {
   stringOfNumbers = ''
   Fcalc.value = '0'
 }
 
-// percent calculation
+// Percent calculation
 const percent = () => (Fcalc.value = parseFloat(Fcalc.value) / 100)
