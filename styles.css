@@ -2,11 +2,12 @@
 
 body {
     background-image: url('https://mindmatters.ai/wp-content/uploads/sites/2/2021/03/mathematical-formulas-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     user-select: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 120vh;
     margin: 0px;
     border: solid double white 10px;
@@ -17,7 +18,7 @@ h1 {
     font-size: 70px;
     color: white;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 100px;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
 }
 h2{
@@ -37,6 +38,7 @@ h2{
     padding: 10px;
     border-radius: 10px;
     max-width: 420px;
+    max-height: 500px;
     font-family: 'Times New Roman', Times, serif;
     height: 70vh;
 }
@@ -100,6 +102,7 @@ input {
 #clr:active {
     background-color: rgb(154, 68, 37);
 }
-#source{
+body>div>p>a{
+    font-size: 30px;
 color:red;
 }
